@@ -14,7 +14,7 @@ const currentYear = document.querySelector("#current-year");
  * To enable the contact form, replace this value with an email address you use.
  * The form uses mailto:, so it opens the visitor's email app instead of storing messages.
  */
-const CONTACT_EMAIL = "ADD_YOUR_EMAIL@example.com";
+const CONTACT_EMAIL = "angelobronosa1732@gmai.com";
 
 if (currentYear) currentYear.textContent = new Date().getFullYear();
 
@@ -85,7 +85,7 @@ contactForm?.addEventListener("submit", (event) => {
     formNote.textContent = "Please complete all fields before preparing your message.";
     return;
   }
-  if (CONTACT_EMAIL === "ADD_YOUR_EMAIL@example.com") {
+  if (CONTACT_EMAIL === "angelobronosa1732@gmai.com") {
     formNote.textContent = "The form is ready, but the site owner needs to add a real email address in script.js before it can open a message.";
     return;
   }
