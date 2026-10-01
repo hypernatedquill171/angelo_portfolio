@@ -85,10 +85,7 @@ contactForm?.addEventListener("submit", (event) => {
     formNote.textContent = "Please complete all fields before preparing your message.";
     return;
   }
-  if (CONTACT_EMAIL === "angelobronosa1732@gmai.com") {
-    formNote.textContent = "The form is ready, but the site owner needs to add a real email address in script.js before it can open a message.";
-    return;
-  }
+  if (CONTACT_EMAIL === "angelobronosa1732@gmai.com")
 
   const subject = encodeURIComponent(`Portfolio contact from ${name}`);
   const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nReply to: ${email}`);
